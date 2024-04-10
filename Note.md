@@ -125,7 +125,8 @@ Derivation
 </br>
 
 ### 8. Exercise
-Q: $M(1,1,1)$ and $M(0,1,-1)$ on plane P. P and $x+y+z=0$ are orthogonal. Find P
+Q: $M_1(1,1,1)$ and $M_2(0,1,-1)$ on plane P. P and $x+y+z=0$ are orthogonal. Find P
+Ans: $2x-y-z=0$
 
 ## 1.5 Spatial Line and Equation
 
@@ -162,6 +163,13 @@ Find point-direction form and parametric form of $\begin{cases}
     x+y+z+1=0\\
     2x-y+3z+4=0
 \end{cases}$
+
+Ans: $\boldsymbol{x}=\boldsymbol{M}+k\boldsymbol{s}\implies \begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}1\\0\\-2\end{pmatrix}+k\begin{pmatrix}4\\-1\\-3\end{pmatrix}\implies
+\begin{cases}
+    x=1+4k\\
+    y=-k\\
+    z=-2-3k
+\end{cases},k\in\mathbb{R}$
 
 ### 5. Angle between spatial lines
 Definition of two lines
@@ -205,6 +213,7 @@ Geometry meaning
 * Ex. $l : \begin{cases}x+y-z-1=0\\x-y+z+1=0\end{cases}$, find the projection on $x+y+z=0$
 
     Ans: line <- intersection <- plane <- cluster
+    $\begin{cases}y-z-1=0\\x+y+z=0\end{cases}。$
 </br>
 
 ### 8. Distance from Point to Line
@@ -259,6 +268,7 @@ Vector valued function
 $x(t)=f(t)\vec{i}+g(t)\vec{j}+h(t)\vec{h}$
 * Ex. rotate $x(t)=(1,t,2t)$ with respect of $z$ axis
     Ans: $(\sqrt{1+t^2}\cos\theta,\sqrt{1+t^2}\sin\theta,2t),\quad t\in\mathbb{R},\theta\in[0,2\pi]$
+    ![](2024-04-10-16-07-07.png)
 * Ex. find the equation of a sphere 
     Ans: $\begin{cases}x=r\sin\varphi\cos\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\varphi\end{cases},\quad 0\le\varphi\le\pi,0\le\theta\le 2\pi$
 
@@ -422,7 +432,7 @@ $z-f(x_0,y_0)=A(x-x_0)+B(y-y_0)$
 $A=f_x(x_0,y_0), B=f_y(x_0,y_0)$
 
 * Theorem:
-if $f(x,y)$ is differentiable, then $f_x(x_0,y_0), f_y(x_0,y_0)$ exist, and &z=f(x,y)$ has total differential $\mathrm{d}z=f_x(x_0,y_0)\mathrm{d}x+f_y(x_0,y_0)\mathrm{d}y$ at $(x_0,y_0)$
+if $f(x,y)$ is differentiable, then $f_x(x_0,y_0), f_y(x_0,y_0)$ exist, and $z=f(x,y)$ has total differential $\mathrm{d}z=f_x(x_0,y_0)\mathrm{d}x+f_y(x_0,y_0)\mathrm{d}y$ at $(x_0,y_0)$
 
 ### 2. Exercise
 1. Find differential of $z=e^{xy}$ $(2,1)$
@@ -521,9 +531,9 @@ Then
 1. $|H|>0, f_{xx}>0$
 2. $|H|>0, f_{xx}<0$
 3. $|H|<0$
-4. $|H|=0
+4. $|H|=0$
 
-Ex. Find the extreme value of $f(x,y)=x^3-y$3+3x^2+3y^2-9x$
+Ex. Find the extreme value of $f(x,y)=x^3-y^3+3x^2+3y^2-9x$
 
 Ans:
 $f_x=3x^2+6x-9,\quad f_y=-3y^2+6y$
